@@ -121,9 +121,10 @@ export class Game {
         console.log('Assets already loaded, reusing...');
       } else {
         // 背景テクスチャを事前ロード
-        await Assets.load({ alias: 'starfield', src: '/assets/starfield.png' });
-        await Assets.load({ alias: 'rocket', src: '/assets/rocket.png' });
-        await Assets.load({ alias: 'octopus-sheet', src: '/assets/sprite-octopus.png' });
+        const basePath = import.meta.env.BASE_URL;
+        await Assets.load({ alias: 'starfield', src: `${basePath}assets/starfield.png` });
+        await Assets.load({ alias: 'rocket', src: `${basePath}assets/rocket.png` });
+        await Assets.load({ alias: 'octopus-sheet', src: `${basePath}assets/sprite-octopus.png` });
       }
       
       // タコスプライトシート(240x120 = 120x120 × 2コマ)を分割
