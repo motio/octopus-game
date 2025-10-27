@@ -1,0 +1,69 @@
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #000428 0%, #004e92 100%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Orbitron', Arial, sans-serif;
+}
+
+.start-screen h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  animation: glow 2s ease-in-out infinite;
+}
+
+.start-screen .subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.start-screen .instructions {
+  max-width: 300px;
+  margin-bottom: 32px;
+  line-height: 1.6;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.start-button {
+  padding: 20px 60px;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: 'Orbitron', Arial, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.start-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+}
+
+.start-button:active {
+  transform: translateY(0);
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(102, 126, 234, 0.6);
+  }
+}

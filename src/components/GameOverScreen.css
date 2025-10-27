@@ -1,0 +1,68 @@
+.gameover-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #1a0033 0%, #330066 100%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Orbitron', Arial, sans-serif;
+}
+
+.gameover-screen h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #ff6b9d;
+  text-shadow: 0 0 20px rgba(255, 107, 157, 0.8);
+}
+
+.gameover-screen .score-display {
+  font-size: 32px;
+  margin-bottom: 40px;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.gameover-screen .score-label {
+  font-size: 18px;
+  font-weight: 700;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.gameover-screen .score-value {
+  font-size: 64px;
+  font-weight: 900;
+  color: #ffd96b;
+  text-shadow: 0 0 30px rgba(255, 217, 107, 0.6);
+}
+
+.restart-button {
+  padding: 20px 60px;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: 'Orbitron', Arial, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(240, 147, 251, 0.4);
+}
+
+.restart-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(240, 147, 251, 0.6);
+}
+
+.restart-button:active {
+  transform: translateY(0);
+}
